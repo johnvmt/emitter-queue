@@ -1,0 +1,25 @@
+{
+  "name": "queue-emit",
+  "version": "0.0.1",
+  "readme": "On events, run functions in series",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnvmt/queue-emit.git"
+  },
+  "author": {
+    "name": "John Murphy-Teixidor",
+    "email": "johnvmt@gmail.com"
+  },
+  "dependencies": {
+    "wolfy87-eventemitter": "5.1.x"
+  },
+  "devDependencies": {
+    "browserify": "11.2.x",
+    "minifyify": "7.3.x"
+  },
+  "scripts": {
+    "prepublish": "node ./browserify.js"
+  },
+  "main": "src/QueueEmit.js"
+}
