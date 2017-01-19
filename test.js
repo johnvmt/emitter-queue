@@ -3,25 +3,21 @@
  */
 var queueEmitter = require('./')();
 
-queueEmitter.on('ev', function(arg1, arg2, next) {
-	console.log(arg1, arg2, "HIT-1");
-	next('uh-oh');
-});
-
-queueEmitter.on('ev', function(arg1, arg2, next) {
-	console.log(arg1, arg2, "HIT-2");
+queueEmitter.on('ev', function(next) {
+	console.log("HIT-1");
 	next();
 });
 
-queueEmitter.once('ev', function(arg1, arg2, next) {
-	console.log(arg1, arg2, "HIT-2");
+queueEmitter.on('ev', function(next) {
+	console.log("HIT-2");
 	next();
 });
 
-queueEmitter.emit('ev', 1, 2, function(error) {
-	console.log(error, "COMPLETE");
+queueEmitter.once('ev', function(next) {
+	console.log("HIT-3");
+	next();
 });
 
-queueEmitter.emit('ev', 1, 2, function(error) {
+queueEmitter.emit('ev', function(error) {
 	console.log(error, "COMPLETE");
 });

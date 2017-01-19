@@ -36,7 +36,7 @@ QueueEmitter.prototype.emit = function() {
 			});
 
 			if(typeof completeCallback == 'function')
-				completeCallback(error); // callback with an error, if any
+				completeCallback(typeof error == 'undefined' ? null : error); // callback with an error, if any
 		}
 	);
 };
