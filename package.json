@@ -1,11 +1,11 @@
 {
-  "name": "queue-emit",
+  "name": "queue-emitter",
   "version": "0.0.1",
   "readme": "On events, run functions in series",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnvmt/queue-emit.git"
+    "url": "https://github.com/johnvmt/queue-emitter.git"
   },
   "author": {
     "name": "John Murphy-Teixidor",
@@ -21,5 +21,5 @@
   "scripts": {
     "prepublish": "node ./browserify.js"
   },
-  "main": "src/QueueEmit.js"
+  "main": "src/QueueEmitter.js"
 }

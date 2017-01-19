@@ -1,7 +1,7 @@
 // Runs from npm install
-var inFile = './src/QueueEmit.js';
-var outFile = './queueEmit.min.js';
-var standalone = 'queueEmit';
+var inFile = './src/QueueEmitter.js';
+var outFile = './queueEmitter.min.js';
+var standalone = 'queueEmitter';
 var mapFile = standalone + '.js.map';
 
 var fs = require('fs');

@@ -1,12 +1,12 @@
 {
-  "name": "queue-emit",
+  "name": "queue-emitter",
   "version": "0.0.1",
   "description": "On events, run functions in series",
   "authors": [
     "John Murphy-Teixidor <johnvmt@gmail.com>"
   ],
   "license": "MIT",
-  "main": "./src/QueueEmit.js",
+  "main": "./src/QueueEmitter.js",
   "keywords": [],
   "ignore": [
     "**/.*",
