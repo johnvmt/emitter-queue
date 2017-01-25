@@ -60,6 +60,4 @@ QueueEmitter.prototype._callbackQueue = function(queueFunctions, queueFunctionAr
 	queueFunctionComplete();
 };
 
-module.exports = function() {
-	return new QueueEmitter();
-};
+module.exports = QueueEmitter;

@@ -1,7 +1,8 @@
 /**
  * Created by jmurphy on 1/18/17.
  */
-var queueEmitter = require('./')();
+var QE = require('./');
+var queueEmitter = new QE();
 
 queueEmitter.on('ev', function(next) {
 	console.log("HIT-1");
