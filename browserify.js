@@ -23,6 +23,5 @@ b.bundle(function (err, src, map) {
 
 function getFilesizeInBytes(filename) {
 	var stats = fs.statSync(filename);
-	var fileSizeInBytes = stats["size"];
-	return fileSizeInBytes
+	return stats['size'];
 }

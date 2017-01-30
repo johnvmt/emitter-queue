@@ -19,7 +19,8 @@
     "minifyify": "7.3.x"
   },
   "scripts": {
-    "prepublish": "node ./browserify.js"
+    "prepublish": "node ./browserify.js",
+    "test": "mocha ./test"
   },
   "main": "./src/QueueEmitter.js"
 }
